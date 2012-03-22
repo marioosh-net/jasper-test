@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" pageWidth="595" pageHeight="842" columnWidth="520" leftMargin="35" rightMargin="40" topMargin="25" bottomMargin="20">
+	<property name="ireport.zoom" value="1.4641000000000022"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="537"/>
+	<field name="imieNazwisko" class="java.lang.String">
+		<fieldDescription><![CDATA[imieNazwisko]]></fieldDescription>
+	</field>
+	<field name="adres1" class="java.lang.String">
+		<fieldDescription><![CDATA[adres1]]></fieldDescription>
+	</field>
+	<field name="adres2" class="java.lang.String">
+		<fieldDescription><![CDATA[adres2]]></fieldDescription>
+	</field>
+	<field name="nrSprawy" class="java.lang.String">
+		<fieldDescription><![CDATA[nrSprawy]]></fieldDescription>
+	</field>
+	<field name="data" class="java.lang.String">
+		<fieldDescription><![CDATA[data]]></fieldDescription>
+	</field>
+	<field name="rok" class="java.lang.String">
+		<fieldDescription><![CDATA[rok]]></fieldDescription>
+	</field>
+	<field name="uprawniony" class="java.lang.String">
+		<fieldDescription><![CDATA[uprawniony]]></fieldDescription>
+	</field>
+	<field name="I1" class="java.lang.String">
+		<fieldDescription><![CDATA[I1]]></fieldDescription>
+	</field>
+	<field name="I2" class="java.lang.String">
+		<fieldDescription><![CDATA[I2]]></fieldDescription>
+	</field>
+	<field name="I3" class="java.lang.String">
+		<fieldDescription><![CDATA[I3]]></fieldDescription>
+	</field>
+	<field name="II1" class="java.lang.String">
+		<fieldDescription><![CDATA[II1]]></fieldDescription>
+	</field>
+	<field name="II2" class="java.lang.String">
+		<fieldDescription><![CDATA[II2]]></fieldDescription>
+	</field>
+	<field name="II3" class="java.lang.String">
+		<fieldDescription><![CDATA[II3]]></fieldDescription>
+	</field>
+	<field name="tytul" class="java.lang.String">
+		<fieldDescription><![CDATA[tytul]]></fieldDescription>
+	</field>
+	<field name="kw" class="java.lang.String">
+		<fieldDescription><![CDATA[kw]]></fieldDescription>
+	</field>
+	<field name="II4" class="java.lang.String">
+		<fieldDescription><![CDATA[II4]]></fieldDescription>
+	</field>
+	<field name="II5" class="java.lang.String">
+		<fieldDescription><![CDATA[II5]]></fieldDescription>
+	</field>
+	<field name="III1" class="java.lang.String">
+		<fieldDescription><![CDATA[III1]]></fieldDescription>
+	</field>
+	<field name="III2" class="java.lang.String">
+		<fieldDescription><![CDATA[III2]]></fieldDescription>
+	</field>
+	<field name="III3" class="java.lang.String">
+		<fieldDescription><![CDATA[III3]]></fieldDescription>
+	</field>
+	<field name="IV" class="java.lang.String">
+		<fieldDescription><![CDATA[IV]]></fieldDescription>
+	</field>
+	<field name="V" class="java.lang.String">
+		<fieldDescription><![CDATA[V]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="752">
+			<staticText>
+				<reportElement x="0" y="135" width="13" height="15">
+					<printWhenExpression><![CDATA[$F{I1} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[I.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="150" width="489" height="41" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{I1} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{I1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="290" width="489" height="50" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{I1} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{II1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="313" y="75" width="170" height="66"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{imieNazwisko} + "\n" + $F{adres1} + "\n" + $F{adres2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="248" width="489" height="42" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{I3} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{I3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="15" y="488" width="500" height="26" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{III3} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA["3. "+$F{III3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="15" y="452" width="500" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{kw} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["1. Od "+$F{data} + " podstawę opodatkowania stanowi miesięcznie kwota zł "+$F{kw}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="45" width="70" height="15"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DECYZJA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="96" width="137" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA["znak: "+ $F{nrSprawy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="84" width="137" height="12"/>
+				<textElement/>
+				<textFieldExpression><![CDATA["z dnia "+$F{data}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="313" y="60" width="60" height="15"/>
+				<textElement textAlignment="Left">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Pan(i)]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="15" y="556" width="500" height="36" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{V} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{V}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="15" y="514" width="500" height="38" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{IV} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IV}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="247" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALA MA KOTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="15" width="177" height="15"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Oddział  I]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="111" width="264" height="24"/>
+				<textElement/>
+				<text><![CDATA[(w korespondencji prosimy podać ww. znak oraz PESEL)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="264" y="592" width="263" height="75"/>
+				<textElement textAlignment="Center" verticalAlignment="Top"/>
+				<text><![CDATA[
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Podpis i pieczątka]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="60" width="264" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{tytul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="191" width="489" height="42" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{I2} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA["Po rozpatrzeniu wniosku Pana(i) z dnia "+$F{I2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="15" y="233" width="394" height="15" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{I3} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[3. Uzasadnienie:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="340" width="489" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{II2} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{II2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="358" width="489" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{II3} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{II3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="15" y="470" width="500" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{kw} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["2. Od "+$F{data}+ " zal. na podatek odprowadzana do urzędu skarb. wynosi zł "+$F{kw}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="290" width="15" height="18" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[II.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="376" width="489" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{II4} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{II4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="394" width="489" height="58" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{II5} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{II5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="452" width="15" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{kw} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[III.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="514" width="15" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{IV} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[IV.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="556" width="15" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{V} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[V.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="290" width="13" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{II1} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="135" width="220" height="15">
+					<printWhenExpression><![CDATA[$F{I1} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[1. PODSTAWA PRAWNA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="191" width="11" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{I2} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="340" width="13" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{II2} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="358" width="13" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{II3} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="376" width="13" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{II4} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="394" width="13" height="18" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{II5} != null]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="667" width="520" height="85" isRemoveLineWhenBlank="true"/>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+		<band height="752">
+			<staticText>
+				<reportElement x="0" y="12" width="505" height="19"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[POUCZENIE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="31" width="490" height="45"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jeżeli Pan(i) uważa, że niniejsza decyzja nie jest zgodna z przepisami lub ze stanem faktycznym, może Pan(i) wnieść odwołanie na piśmie (w dwóch egzemplarzach) lub ustnie do protokołu za pośrednictwem organu rentowego, który wydał decyzję do właściwego ze względu na Pana(i) miejsce zamieszkania Sądu Okręgowego – Sądu Pracy i Ubezpieczeń Społecznych, w terminie miesiąca od dnia doręczenia decyzji. Po tym terminie decyzja staje się prawomocna. Odwołanie nie przysługuje od decyzji o przyznaniu świadczenia w kwocie zaliczkowej.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="71" width="490" height="45"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jeżeli kwestionuje Pan(i) zasadność pobrania przez organ rentowy zaliczki na podatek albo jej wysokość, może Pan(i) złożyć wniosek o stwierdzenie nadpłaty podatku do naczelnika właściwego urzędu skarbowego, w terminie do 5 lat od pobrania podatku. Świadczenia emerytalno-rentowe przekazywane za granicę lub wypłacane w Polsce, a należne osobom uprawnionym zamieszkałym za granicą, podlegają opodatkowaniu według przepisów obowiązujących w Polsce, chyba że umowy międzynarodowe o unikaniu podwójnego opodatkowania stanowią inaczej.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="112" width="479" height="18"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Prawo do świadczenia ustaje, gdy ustanie którykolwiek z warunków wymaganych do uzyskania tego prawa lub w razie śmierci osoby uprawnionej.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="130" width="479" height="35"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Prawo do renty z tytułu niezdolności do pracy, przysługującej na podstawie ustawy o emeryturach i rentach z FUS, ustaje z dniem, od którego została z urzędu przyznana emerytura. Emeryturę tą przyznaje się od daty osiągnięcia przez rencistę wieku: 60 lat – kobieta, 65 lat – mężczyzna lub od daty, od której przysługiwałaby wypłata renty, jeżeli rencista złożył wniosek o wznowienie wypłaty świadczenia.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="162" width="490" height="55"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Osoba, która nienależnie pobrała świadczenia, jest zobowiązana do ich zwrotu. Za nienależnie pobrane uważa się świadczenia wypłacone mimo zaistnienia okoliczności powodujących: ustanie lub zawieszenie do nich prawa albo wstrzymanie wypłaty w całości lub części, jeżeli osoba pobierająca świadczenia była pouczona o braku prawa do ich pobierania, oraz  świadczenia przyznane lub wypłacone na podstawie fałszywych zeznań lub dokumentów albo w innych wypadkach świadomego wprowadzenia w błąd organu rentowego przez osobę pobierającą świadczenia, a także wypłacone – z przyczyn niezależnych od organu rentowego – osobie innej niż wskazana w decyzji tego organu.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="212" width="479" height="18"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[W razie zbiegu u jednej osoby prawa do kilku świadczeń emerytalno-rentowych wypłaca się jedno z tych świadczeń – wyższe lub wybrane przez emeryta-rencistę.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="230" width="479" height="46"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[W razie zbiegu prawa do emerytury i renty z tytułu niezdolności do pracy w związku: z działaniami wojennymi lub służbą wojskową, pobytem w obozach koncentracyjnych, ośrodkach zagłady lub innych miejscach odosobnienia, z przymusowym zatrudnieniem żołnierzy zastępczej służby wojskowej, wypłaca się w zależności od wyboru: emeryturę powiększoną o połowę renty albo rentę powiększoną o połowę emerytury.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="263" width="479" height="29"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[W razie zbiegu prawa do emerytury i renty z tytułu niezdolności do pracy w związku z wypadkiem lub chorobą zawodową wypłaca się w zależności od wyboru: emeryturę powiększoną o połowę renty albo rentę powiększoną o połowę emerytury. W przypadku osiągania przychodu przysługuje jedno wybrane świadczenie.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="290" width="479" height="13"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Świadczenia w zbiegu wypłacane są od dnia powstania prawa do dwóch świadczeń, jednak nie wcześniej niż od miesiąca, w którym został zgłoszony wniosek.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="299" width="479" height="44"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Prawo do emerytury lub renty, także do części renty rodzinnej, ulega zawieszeniu albo świadczenia te ulegają zmniejszeniu w razie osiągania przychodu  z tytułu zatrudnienia, służby lub innej pracy zarobkowej albo prowadzenia pozarolniczej działalności oraz pobierania zasiłków: chorobowego, macierzyńskiego, opiekuńczego, wyrównawczego, świadczenia rehabilitacyjnego i wyrównawczego, dodatku wyrównawczego, a także wynagrodzenia za czas niezdolności do pracy, w tym także za granicą, chyba że umowy międzynarodowe w dziedzinie ubezpieczeń społecznych stanowią inaczej.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="343" width="479" height="37"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[W przypadku osiągania przychodu w kwocie przekraczającej 70% przeciętnego miesięcznego wynagrodzenia za kwartał kalendarzowy ostatnio ogłoszonego przez Prezesa GUS, nie wyższej niż 130% – emerytura lub renta podlega zmniejszeniu o kwotę przekroczenia, nie większą niż kwota maksymalnego zmniejszenia; natomiast część renty rodzinnej – nie więcej niż o proporcjonalną do liczby osób uprawnionych do renty – część kwoty maksymalnego zmniejszenia renty rodzinnej.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="380" width="479" height="27"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Osiąganie przychodu w kwocie przekraczającej 130% przeciętnego miesięcznego wynagrodzenia za kwartał kalendarzowy ostatnio ogłoszonego przez Prezesa GUS powoduje zawieszenie wypłaty świadczenia.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="397" width="479" height="51"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Prawo do emerytury ulega zawieszeniu bez względu na wysokość przychodu uzyskiwanego przez emeryta z tytułu zatrudnienia kontynuowanego bez uprzedniego rozwiązania stosunku pracy z każdym pracodawcą, na rzecz którego wykonywał je bezpośrednio przed dniem nabycia prawa do emerytury oraz bez względu na wiek tego emeryta (dotyczy osób pozostających w stosunku pracy, do których stosuje się polskie przepisy prawa pracy lub odpowiednie przepisy ustawodawstw państw członkowskich UE/EOG lub Szwajcarii oraz innych państw, z którymi Polskę wiażą umowy międzynarodowe w dziedzinie zabezpieczenia społecznego o ile dotyczą rozwiązywania stosunku pracy).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="446" width="479" height="51"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Podjęcie wypłaty emerytury, która została zawieszona z przyczyn, o których mowa w pkt 4 następuje, od pierwszego dnia następnego miesiąca, jeżeli stosunek pracy został rozwiązany z ostatnim dniem miesiąca, a w pozostałych przypadkach – od pierwszego dnia miesiąca, w którym został rozwiązany stosunek pracy, nie wcześniej jednak niż od miesiąca, w którym zgłoszono wniosek o podjęcie wypłaty emerytury wraz z dokumentem potwierdzającym rozwiązanie stosunku pracy, gdy decyzja o przyznaniu emerytury jest prawomocna.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="487" width="479" height="45"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[W przypadku emerytów, którzy nabyli prawo do emerytury przed 1.01.2011 r. prawo do emerytury ulega zawieszeniu, jeżeli stosunek pracy z pracodawcą na rzecz którego emeryt wykonywał zatrudnienie przed nabyciem prawa do emerytury, nie został rozwiązany przed 1.10.2011 r. – bez względu na wiek emeryta, chyba, że emeryt rozwiązał stosunek pracy, w jakim pozostawał przed nabyciem prawa do emerytury wcześniejszej, a następnie podjął ponownie zatrudnienie w ramach stosunku pracy, który kontynuuje po nabyciu prawa do kolejnej emerytury]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="532" width="479" height="33"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Zasad określonych w pkt 1-3 nie stosuje się do emerytów, którzy ukończyli: kobieta – 60 lat, mężczyzna – 65 lat, a także do osób uprawnionych do: rent inwalidów wojennych oraz rent rodzinnych po tych inwalidach, rent z tytułu niezdolności do pracy w związku: ze służbą wojskową lub przymusowym zatrudnieniem żołnierzy zastępczej służby wojskowej oraz rent rodzinnych po tych osobach, jeżeli śmierć pozostaje w związku z tymi zdarzeniami.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="565" width="479" height="13"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Prawo do świadczenia może ulec zawieszeniu również na wniosek emeryta lub rencisty.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="574" width="479" height="11"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Pan(i) jest zobowiązany(a) powiadomić organ rentowy o:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="583" width="479" height="103"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[— osiąganiu przychodu i jego wysokości oraz – w terminie do końca lutego następnego roku – o kwocie przychodu osiągniętego łącznie w roku kalendarzowym i w poszczególnych miesiącach; jeżeli prowadzi Pan(i) pozarolniczą działalność – o łącznej i miesięcznej kwocie podstawy wymiaru składek lub – o kwocie jaką zadeklarował(a)by Pan(i), gdyby opłacał(a) składkę,
+— rozwiązaniu stosunku pracy z każdym pracodawcą, jeżeli stosunek ten został nawiązany przed dniem nabycia prawa do emerytury,
+— pobieraniu lub przyznaniu emerytury lub renty z innego tytułu lub przyznanej przez inny organ, uposażenia sędziego lub prokuratora w stanie spoczynku albo uposażenia rodzinnego,
+— pobieraniu wynagrodzenia sędziego lub prokuratora, a także uposażenia w stanie spoczynku – sędziego lub prokuratora, przeniesionego w taki stan w trybie art. 71 § 3 ustawy – Prawo o ustroju sądów powszechnych,
+— pobycie w domu pomocy społecznej, w zakładzie opiekuńczo-leczniczym lub pielęgnacyjno-opiekuńczym,
+— osiąganiu przychodu – w przypadku pobierania świadczenia w drodze wyjątku,
+— pobieraniu deputatu węglowego z tytułu zatrudnienia na kolei.
+Osoba pobierająca emeryturę lub rentę wolną od podatku dochodowego od osób fizycznych, dla której składka na ubezpieczenie zdrowotne finansowana jest z budżetu państwa, zobowiązana jest powiadomić organ rentowy o powstaniu i wygaśnięciu obowiązku ubezpieczenia zdrowotnego z innego tytułu.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="681" width="479" height="67"/>
+				<textElement textAlignment="Justified">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Osoba pobierająca rentę rodzinną lub część tej renty przysługującą dziecku – po ukończeniu 16 roku życia – zobowiązana jest powiadomić o zaprzestaniu uczęszczania do szkoły-uczelni, a jeżeli uczy się nadal – zobowiązana jest do nadesłania zaświadczenia z ww. szkoły-uczelni z podaniem terminu programowego jej ukończenia.
+Na wniosek jednej z osób uprawnionych do renty rodzinnej następuje wyłączenie jej z kręgu osób uprawnionych. Prawo do renty i jej wysokość ustala się ponownie z pominięciem wnioskodawcy.
+Wdowa-wdowiec, która(y) pobiera rentę rodzinną przyznaną w związku z brakiem niezbędnych źródeł utrzymania zobowiązana(y) jest powiadomić organ rentowy o wysokości uzyskiwanego miesięcznie przychodu, a w przypadku pobierania ww. renty w okresie uczestnictwa w szkoleniu zawodowym – o zaprzestaniu uczestnictwa w tym szkoleniu.
+W przypadku ustalenia prawa do emerytury lub renty na podstawie przepisów o ubezpieczeniu społecznym rolników, wysokość świadczenia podlega ponownemu ustaleniu bez kwoty zwiększenia z tytułu ww. ubezpieczenia.
+Należy też powiadomić organ rentowy o każdej zmianie adresu oraz numeru rachunku w banku, a także o innych okolicznościach wskazanych w decyzji przyznającej oraz w późniejszych decyzjach wydawanych w sprawie przysługującego świadczenia.
+Treść zamieszczona w cz. V i VI pouczenia oraz w cz. VII tiret 1 nie dotyczy świadczenia przyznanego w drodze wyjątku.
+				]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="31" width="13" height="18" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[I.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="71" width="13" height="18" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[II.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="112" width="13" height="18" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[III.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="112" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="130" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="162" width="13" height="18" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[IV.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="212" width="13" height="20" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[V.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="212" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="230" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="263" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="290" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="299" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="299" width="13" height="20" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[VI.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="343" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="380" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="397" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="446" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="487" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[6.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="532" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[7.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="565" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[8.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="574" width="13" height="11" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="574" width="13" height="20" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[VII.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="350" y="5" width="116" height="20"/>
+				<textElement textAlignment="Right">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Strona]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="470" y="5" width="35" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="5" width="116" height="20"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORT/2012]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
