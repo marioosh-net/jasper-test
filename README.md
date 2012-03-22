@@ -1,6 +1,13 @@
 Jasper Reports Test App
 =======================
 
+Installation
+------------
+Building project using Maven:
+<pre><code>mvn package</code></pre>
+
+Usage
+------------
 <pre><code>Jasper Reports Test tool
 usage: java -jar jasper.jar [-v] [-xp &lt;xpath&gt;] [-ds &lt;xml_datasource&gt;] &lt;jrxml_file&gt;
             [&lt;pdf_file&gt;]
